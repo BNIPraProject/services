@@ -42,7 +42,7 @@ namespace PraProjectBNI
             services.AddDbContext<PraBNIContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<PraBNIContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<PraBNIContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultC")));
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;

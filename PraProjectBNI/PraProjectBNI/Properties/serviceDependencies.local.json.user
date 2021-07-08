@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2021-07-08T17:14:38.0037054Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2021-07-08T17:14:41.9356701Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "100d6497-c47c-4c79-9863-5265bd0e65e5"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "rg-sea-bni-internship"
+    }
+  }
+}
