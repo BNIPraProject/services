@@ -42,14 +42,20 @@ namespace PraProjectBNI
             services.AddDbContext<PraBNIContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDbContext<PraBNIContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 8;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<PraBNIContext>();
+
             services.AddScoped<IStudent, StudentData>();
             services.AddScoped<IEnrollment, EnrollmentData>();
             services.AddScoped<ICourse, CourseData>();
             services.AddScoped<IDosenCourse, DosenCourseData>();
             services.AddScoped<IDosen, DosenData>();
         }
-
-       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -66,8 +72,6 @@ namespace PraProjectBNI
             app.UseRouting();
             //menggunakan autentikasi
             app.UseAuthentication();
-            app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

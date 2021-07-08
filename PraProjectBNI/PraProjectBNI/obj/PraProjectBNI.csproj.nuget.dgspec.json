@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Document\\bni techship\\BNIPraProject\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj": {}
   },
   "projects": {
-    "D:\\Document\\bni techship\\BNIPraProject\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Document\\bni techship\\BNIPraProject\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj",
         "projectName": "PraProjectBNI",
-        "projectPath": "D:\\Document\\bni techship\\BNIPraProject\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Document\\bni techship\\BNIPraProject\\services\\PraProjectBNI\\PraProjectBNI\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\services\\PraProjectBNI\\PraProjectBNI\\PraProjectBNI.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\services\\PraProjectBNI\\PraProjectBNI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.7, )"
