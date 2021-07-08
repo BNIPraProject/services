@@ -3,10 +3,13 @@
 
 name: Azure App Service - PraProjectBNI(Production), Build and deploy DotnetCore app
 
-on:
+on: 
   push:
     branches:
       - main
+
+env:
+  AZURE_WEBAPP_NAME: PraProjectBNI
 
 jobs:
   build-and-deploy:
